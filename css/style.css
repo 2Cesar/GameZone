@@ -1,0 +1,208 @@
+body{
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #0f0f0f;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+h1, h2{
+    text-shadow: 0px 0px 10px #00f7ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* SCROLLBAR */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #111;
+}
+::-webkit-scrollbar-thumb{
+    background: #00f7ff;
+    border-radius: 10px;
+}
+/* NAVBAR */
+.navbar{
+    background-color: #111 !important;
+    border-bottom: 2px solid #00f7ff;
+    backdrop-filter: blur(10px);
+}
+.navbar-brand{
+    font-size: 1.7rem;
+    color: #00f7ff !important;
+}
+.nav-link{
+    color: white !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: #00f7ff !important;
+}
+/* HERO SECTION */
+/* HERO SLIDER */
+.hero-slide{
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+/* INDICADORES */
+.carousel-indicators button{
+    background-color: #00f7ff !important;
+}
+/* BOTONES */
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding: 20px;
+}
+/* SECCIÓN JUEGOS */
+#juegos{
+    background-color: #151515;
+}
+.game-card{
+    background-color: #161616;
+    border: 1px solid #2c2c2c;
+    border-radius: 15px;
+    transition: 0.4s;
+    overflow: hidden;
+}
+.game-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px #00f7ff;
+}
+.game-card img{
+    border-bottom: 2px solid #00f7ff;
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px ;
+    height: 350px;
+    object-fit: cover;
+}
+.game-card .card-body{
+    color: white;
+}
+.game-card .btn{
+    background-color: #00f7ff;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+.game-card .btn:hover{
+    background-color: white;
+}
+/* NOTICIAS */
+.news-box{
+    background-color: #1b1b1b;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.news-box:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 15px #00f7ff;
+}
+.news-box h4{
+    color: #00f7ff;
+}
+/* TABLA TORNEOS */
+.torneos-section{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.80),
+    rgba(0,0,0,0.80)),
+    url('../img/copa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.torneos-section h2{
+    color: #00f7ff;
+}
+.table{
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.table th{
+    background-color: #00f7ff;
+    color: black;
+}
+.table td{
+    vertical-align: middle;
+}
+.table-hover tbody tr:hover{
+    background-color: rgba(0,247,255,0.15);
+}
+/* FOOTER */
+footer{
+    background: #080808;
+    border-top: 2px solid #00f7ff;
+    padding-top: 60px;
+}
+.footer-logo{
+    color: #00f7ff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.footer-text{
+    color: #aaa;
+    line-height: 1.8;
+}
+.footer-title{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-links{
+    list-style: none;
+    padding: 0;
+}
+.footer-links li{
+    margin-bottom: 10px;
+}
+.footer-links a{
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-links a:hover{
+    color: #00f7ff;
+    padding-left: 5px;
+}
+.footer-social i{
+    font-size: 1.7rem;
+    margin-right: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-social i:hover{
+    color: #00f7ff;
+    transform: translateY(-5px);
+}
+.footer-bottom{
+    border-top: 1px solid #222;
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    color: #777;
+}
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .hero-section h1{
+        font-size: 2.5rem;
+    }
+    .hero-section{
+        text-align: center;
+    }
+    .game-card img{
+        height: 250px;
+    }
+}

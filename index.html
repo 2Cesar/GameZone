@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Zone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="img/logo (1).png" alt="Logo" width="45" class="me-2">
+                GameZone
+            </a>
+            <!-- BOTÓN RESPONSIVE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#juegos">
+                            Juegos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">
+                            Noticias
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#torneos">
+                            Torneos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HERO SECTION -->
+    <!-- HERO SLIDER -->
+<section id="inicio">
+    <div id="heroCarousel"
+    class="carousel slide carousel-fade"
+    data-bs-ride="carousel">
+        <!-- INDICADORES -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <!-- SLIDES -->
+        <div class="carousel-inner">
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('img/banner10.jfif');">
+                </div>
+            </div>
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('img/banner11.jfif');">
+                </div>
+            </div>
+            <!-- SLIDE 3 -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('img/banner12.jfif');">
+                </div>
+            </div>
+            
+        </div>
+        <!-- BOTONES -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+    <!-- JUEGOS POPULARES -->
+    <section id="juegos" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-white">
+                    Juegos Populares
+                </h2>
+                <p class="text-light">
+                    Los títulos más jugados del año
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card game-card h-100">
+                        <img src="img/gta6" class="card-img-top" alt="GTA VI">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                GTA VI
+                            </h5>
+                            <p class="card-text">
+                                Acción y mundo abierto.
+                            </p>
+                            <button class="btn btn-info w-100">
+                                Ver Más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card game-card h-100">
+                        <img src="img/valorant.jfif" class="card-img-top" alt="Valorant">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Valorant
+                            </h5>
+                            <p class="card-text">
+                                Shooter competitivo online.
+                            </p>
+                            <button class="btn btn-info w-100">
+                                Ver Más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="card game-card h-100">
+                        <img src="img/minecraft.jfif" class="card-img-top" alt="Minecraft">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Minecraft
+                            </h5>
+                            <p class="card-text">
+                                Construcción y supervivencia.
+                            </p>
+                            <button class="btn btn-info w-100">
+                                Ver Más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NOTICIAS -->
+    <section id="noticias" class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-info">
+                    Noticias Gamer
+                </h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="news-box">
+                        <h4>
+                            Nuevo tráiler de GTA VI
+                        </h4>
+                        <p>
+                            Rockstar Games presentó nuevas imágenes del esperado juego.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="news-box">
+                        <h4>
+                            Mundial de Valorant 2026
+                        </h4>
+                        <p>
+                            Los mejores equipos competirán por millones de dólares.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TORNEOS -->
+    <section id="torneos" class="py-5 torneos-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-white">
+                    Próximos Torneos
+                </h2>
+            </div>
+            <div class="table-responsive" data-aos="fade-left">
+                <table class="table table-dark table-hover text-center">
+                    <thead>
+                        <tr>
+                            <th>Juego</th>
+                            <th>Fecha</th>
+                            <th>Premio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Valorant</td>
+                            <td>20 Junio</td>
+                            <td>$5000</td>
+                        </tr>
+                        <tr>
+                            <td>Fortnite</td>
+                            <td>5 Julio</td>
+                            <td>$3000</td>
+                        </tr>
+                        <tr>
+                            <td>EA FC 26</td>
+                            <td>15 Agosto</td>
+                            <td>$2000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+<!-- FOOTER -->
+<footer id="contacto">
+    <div class="container">
+        <div class="row gy-4">
+            <!-- LOGO -->
+            <div class="col-lg-4">
+                <h3 class="footer-logo">
+                    <img src="img/logo.png"
+                    width="50">
+                    GameZone
+                </h3>
+                <p class="footer-text">
+                    Tu portal gamer con noticias,
+                    torneos y videojuegos.
+                </p>
+            </div>
+            <!-- LINKS -->
+            <div class="col-lg-4">
+                <h4 class="footer-title">
+                    Navegación
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#juegos">Juegos</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#torneos">Torneos</a></li>
+                </ul>
+            </div>
+            <!-- REDES -->
+            <div class="col-lg-4">
+                <h4 class="footer-title">
+                    Síguenos
+                </h4>
+                <div class="footer-social">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-discord"></i>
+                    <i class="bi bi-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+            <p>
+                © 2026 GameZone | Todos los derechos reservados
+            </p>
+        </div>
+    </div>
+</footer>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1200,
+        once: true
+    });
+</script>
+</body>
+</html>
