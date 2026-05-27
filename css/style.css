@@ -1,5 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
-    opacity: 0;
+    opacity: 1;
     transition: 0.5s;
     background-color: #0f0f0f;
     font-family: Arial, Helvetica, sans-serif;
@@ -45,8 +48,8 @@ h1, h2{
 /* HERO SECTION */
 /* HERO SLIDER */
 .hero-slide{
-    min-height: 80vh;
-    background-size: cover;
+    min-height: 75vh;
+    background-size: 100% auto;
     background-position: center;
     display: flex;
     align-items: center;
@@ -72,6 +75,7 @@ h1, h2{
     border-radius: 15px;
     transition: 0.4s;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 .game-card:hover{
     transform: translateY(-10px);
@@ -97,18 +101,40 @@ h1, h2{
     background-color: white;
 }
 /* NOTICIAS */
-.news-box{
-    background-color: #1b1b1b;
-    padding: 30px;
-    border-radius: 10px;
-    transition: 0.3s;
+.news-card{
+    background: #161616;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+    height: 100%;
 }
-.news-box:hover{
-    transform: scale(1.03);
-    box-shadow: 0px 0px 15px #00f7ff;
+.news-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px #00f7ff;
 }
-.news-box h4{
-    color: #00f7ff;
+.news-card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+.news-content{
+    padding: 25px;
+}
+.news-tag{
+    background: #00f7ff;
+    color: black;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.news-content h4{
+    margin-top: 18px;
+    color: white;
+}
+.news-content p{
+    color: #aaa;
+    margin-top: 10px;
 }
 /* TABLA TORNEOS */
 .torneos-section{
@@ -151,6 +177,7 @@ footer{
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+    text-shadow: 0px 0px 15px #00f7ff;
 }
 .footer-text{
     color: #aaa;
@@ -202,7 +229,74 @@ footer{
     .hero-section{
         text-align: center;
     }
-    .game-card img{
-        height: 250px;
+    .navbar-brand{
+        font-size: 1.3rem;
     }
+    .navbar-brand img{
+        width: 35px;
+    }
+    .carousel-item img{
+        object-position: center;
+    }
+    .carousel-indicators{
+        bottom: 5px;
+    }
+    .hero-slide{
+        min-height: 45vh;
+    }
+    .game-card img{
+        height: 220px;
+    }
+    .news-card img{
+        height: 200px;
+    }
+    h1{
+        font-size: 2rem !important;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    .footer-logo{
+        justify-content: center;
+    }
+    .footer-title{
+        margin-top: 20px;
+    }
+}
+/* GTA VI PAGE */
+.gta-hero{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),
+    url('../img/gta-banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* GALLERY */
+.gallery-img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.gallery-img:hover{
+    transform: scale(1.03);
+}
+/* VALORANT PAGE */
+.valorant-hero{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),
+    url('../img/banner-valorant.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* MINECRAFT PAGE */
+.minecraft-hero{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),
+    url('../img/banner-minecraft.jpg');
+    background-size: cover;
+    background-position: center;
 }
