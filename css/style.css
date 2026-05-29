@@ -52,8 +52,9 @@ h1, h2{
 /* HERO SLIDER */
 .hero-slide{
     min-height: 75vh;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
 }
@@ -110,6 +111,7 @@ h1, h2{
     overflow: hidden;
     transition: 0.4s;
     height: 100%;
+    cursor: pointer;
 }
 .news-card:hover{
     transform: translateY(-10px);
@@ -147,7 +149,7 @@ h1, h2{
     url('../img/copa.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 .torneos-section h2{
     color: #00f7ff;
@@ -238,6 +240,11 @@ footer{
     .navbar-brand img{
         width: 35px;
     }
+    .navbar-collapse{
+        background: #111;
+        padding: 15px;
+        border-radius: 10px;
+    }
     .carousel-item img{
         object-position: center;
     }
@@ -245,7 +252,7 @@ footer{
         bottom: 5px;
     }
     .hero-slide{
-        min-height: 45vh;
+        min-height: 35vh;
     }
     .game-card img{
         height: 220px;
@@ -265,15 +272,20 @@ footer{
     .footer-title{
         margin-top: 20px;
     }
+    
 }
 /* GTA VI PAGE */
 .gta-hero{
     background-image:
-    linear-gradient(rgba(0,0,0,0.75),
-    rgba(0,0,0,0.75)),
+    linear-gradient(rgba(0,0,0,0.65),
+    rgba(0,0,0,0.65)),
     url('../img/gta-banner.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 /* GALLERY */
 .gallery-img{
@@ -281,6 +293,7 @@ footer{
     height: 500px;
     object-fit: cover;
     transition: 0.4s;
+    border-radius: 15px;
 }
 .gallery-img:hover{
     transform: scale(1.03);
@@ -288,18 +301,43 @@ footer{
 /* VALORANT PAGE */
 .valorant-hero{
     background-image:
-    linear-gradient(rgba(0,0,0,0.75),
-    rgba(0,0,0,0.75)),
+    linear-gradient(rgba(0,0,0,0.65),
+    rgba(0,0,0,0.65)),
     url('../img/banner-valorant.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 /* MINECRAFT PAGE */
 .minecraft-hero{
     background-image:
-    linear-gradient(rgba(0,0,0,0.75),
-    rgba(0,0,0,0.75)),
+    linear-gradient(rgba(0,0,0,0.65),
+    rgba(0,0,0,0.65)),
     url('../img/banner-minecraft.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+@media(max-width: 768px){
+    .valorant-hero,
+    .minecraft-hero,
+    .gta-hero{
+        min-height: 45vh;
+        background-position: top center;
+        padding: 40px 20px;
+    }
+    .gallery-img{
+        height: 250px;
+    }
+    .navbar-collapse{
+        background: #111;
+        padding: 15px;
+        border-radius: 10px;
+    }
 }
