@@ -381,3 +381,120 @@ footer{
         width: 70px;
     }
 }
+/* Registro */
+.gamer-card{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(14, 14, 15, 0.95);
+    border: 2px solid #00f7ff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow:
+    0 0 10px #00f7ff,
+    0 0 20px rgba(0,229,255,.5),
+    inset 0 0 20px rgba(0,229,255,.1);
+}
+.neon-title{
+    text-align: center;
+    color: #00e5ff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow:
+    0 0 5px #00e5ff,
+    0 0 10px #00e5ff,
+    0 0 20px #00e5ff;
+}
+.form-label{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.gamer-input{
+    background: rgba(0,0,0,.35);
+    border: 1px solid #00e5ff;
+    border-radius: 10px;
+    color: white;
+    padding: 14px;
+}
+.gamer-input:focus{
+    background: rgba(0,0,0,.4);
+    color: white;
+    border-color: #00e5ff;
+    box-shadow:
+    0 0 5px #00e5ff,
+    0 0 15px rgba(0,229,255,.5);
+    outline: none;
+}
+.form-check-input{
+    background-color: transparent;
+    border: 1px solid #00e5ff;
+}
+.form-check-input:checked{
+    background-color: #00e5ff;
+    border-color: #00e5ff;
+}
+.form-check-label{
+    color: white;
+}
+.gamer-btn{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        #00e5ff,
+        #00cfff
+    );
+    color: #000;
+    transition: .3s;
+}
+.gamer-btn:hover{
+    transform: translateY(-3px);
+    box-shadow:
+    0 0 10px #00e5ff,
+    0 0 25px #00e5ff,
+    0 0 40px #00e5ff;
+}
+.success{
+    background: rgba(0,255,128,.15);
+    color: #00ff99;
+    border: 1px solid #00ff99;
+    padding: 10px;
+    border-radius: 8px;
+}
+.error{
+    background: rgba(255,0,0,.15);
+    color: #ff5f5f;
+    border: 1px solid #ff5f5f;
+    padding: 10px;
+    border-radius: 8px;
+}
+/*terminos y condiciones */
+.btn-neon{
+    background:#00ffff;
+    color:black;
+    font-weight:bold;
+    border:none;
+}
+.btn-neon:hover{
+    background:#00e6e6;
+    box-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff;
+}
+.link-neon{
+    color:#00ffff;
+    text-decoration:none;
+}
+.link-neon:hover{
+    text-shadow:
+    0 0 10px #00ffff;
+}
+.modal-gamer{
+    background:#0f172a;
+    color:white;
+    border:2px solid #00ffff;
+}
